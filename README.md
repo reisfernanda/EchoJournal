@@ -1,0 +1,1 @@
+EchoJournal app created during The Android Architecture Masterclass by Philipp Lackner: -masterclass?utm_medium=email&utm_source=Philipp%20Lackner&utm_campaign=fall-sale&utm_term=undefined&utm_content=undefined
