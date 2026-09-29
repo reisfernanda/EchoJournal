@@ -57,6 +57,17 @@ fun EchosScreen(
                 .background(brush = MaterialTheme.colorScheme.bgGradient)
                 .padding(innerPadding)
         ) {
+            EchoFilterRow(
+                moodChipContent = state.moodChipContent,
+                hasActiveMoodFilters = state.hasActiveMoodFilters,
+                selectedEchoFilterChip = state.selectedEchoFilterChip,
+                moods = state.moods,
+                topicChipTitle = state.topicChipTitle,
+                hasActiveTopicFilters = state.hasActiveTopicFilters,
+                topics = state.topics,
+                onAction = onAction,
+                modifier = Modifier.fillMaxWidth()
+            )
             when {
                 state.isLoadingData -> {
                     CircularProgressIndicator(
@@ -68,6 +79,9 @@ fun EchosScreen(
                     EchosEmptyBackground(
                         modifier = Modifier.weight(1f).fillMaxWidth()
                     )
+                }
+                else -> {
+
                 }
             }
         }
